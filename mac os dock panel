@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Example: Add Safari to the Dock
+dockutil --add "/Applications/Safari.app" --replacing "Safari"
+
+# Example: Remove an existing item (replace "Notes" with the actual name)
+dockutil --remove "Notes"
+
+# Restart the Dock to apply changes
+killall Dock
